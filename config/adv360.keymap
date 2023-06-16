@@ -12,7 +12,7 @@
         compatible = "zmk,behavior-hold-tap";
         label = "HOMEROW_MODS";
         #binding-cells = <2>;
-        tapping-term-ms = <175>;
+        tapping-term-ms = <210>;
         quick-tap-ms = <0>;
         flavor = "tap-preferred";
         bindings = <&kp>, <&kp>;
@@ -49,7 +49,7 @@
  &kp EQUAL     &kp N1    &kp N2    &kp N3     &kp N4    &kp N5             &tog 0     &tog 0     &kp N6     &kp N7     &kp N8     &kp N9     &kp N0  &kp MINUS
    &kp TAB      &kp Q     &kp W     &kp F      &kp P     &kp B              &mo 3      &mo 3      &kp J      &kp L      &kp U      &kp Y   &kp SEMI   &kp BSLH
    &kp ESC      &hm LALT A     &hm LGUI R     &hm LCTRL S      &hm LSHIFT T     &kp G              &none  &kp LCTRL   &kp LALT                         &kp LGUI  &kp RCTRL      &none   &kp M   &hm LSHIFT N      &hm LCTRL E    &hm LGUI I     &hm LALT O  &kp SQT
- &kp LSHFT      &kp Z     &kp X     &kp C      &kp D     &kp V              &none      &none   &kp HOME      &none      &none  &kp PG_UP      &none      &none   &kp K   &kp H  &kp COMMA  &kp DOT  &kp FSLH    &mo 5
+ &kp LSHFT      &kp Z     &kp X     &kp C      &kp D     &kp V              &none      &none   &kp HOME      &none      &none  &kp PG_UP      &none      &none   &kp K   &kp H  &kp COMMA  &kp DOT  &kp FSLH    &trans
      &mo 1  &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT  &kp BSPC            &kp DEL    &kp END  &kp PG_DN  &kp ENTER  &kp SPACE     &kp UP   &kp DOWN     &trans  &trans   &mo 2
             >;
         };
@@ -76,33 +76,12 @@
 
         layer_mod {
             bindings = <
- &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4            &tog 0  &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans        &trans        &trans        &trans        &trans        &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4            &to 0  &to 0  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans        &trans        &trans        &trans        &trans        &trans            &bootloader  &bootloader  &trans  &trans  &trans  &trans  &trans  &trans
  &trans        &trans        &trans        &trans        &trans        &trans            &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
  &trans        &trans        &trans        &trans        &trans        &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
  &trans        &trans        &trans    &bl BL_INC    &bl BL_DEC    &bt BT_CLR            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
-
-        layer_Material_shell {
-            bindings = <
- &trans                 &trans                  &trans                 &trans                 &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans                 &trans           &macro_wm_max                  &none                  &none   &none            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &macro_focus_launcher  &macro_wm_cycle_layout  &macro_wm_prev_window  &macro_wm_next_window   &none            &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &macro_wm_focus_le_mon  &macro_wm_focus_ri_mon  &trans  &trans  &trans
- &trans     &macro_kill_window  &macro_wm_layout_split  &macro_prev_workspace  &macro_next_workspace   &none            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans   &macro_wm_cur_wind_up  &macro_wm_cur_wind_dwn  &trans  &trans  &trans
- &trans                 &trans                  &trans  &macro_window_to_left    &macro_window_right  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                  &trans
-            >;
-        };
-
-        layer_Specials {
-            bindings = <
- &trans  &trans        &trans         &trans      &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans        &trans         &trans      &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &kp NUMBER_0      &kp CARET  &kp DOLLAR  &trans            &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans     &kp POUND  &kp AMPERSAND      &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans        &trans         &trans      &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
     };
 };
