@@ -55,11 +55,11 @@
 
         layer_Shortcuts {
             bindings = <
-                 &trans         &trans                  &trans                  &trans                  &trans                  &trans                  &trans              &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                 &trans         &macro_code_inspection  &macro_find_usages      &macro_actions          &macro_bookmarks        &macro_add_bookmark     &trans              &trans  &none   &none   &none  &trans   &trans  &trans
-                 &trans         &macro_open_navigator   &macro_prev_window      &macro_prev_splitter    &macro_next_splitter    &macro_next_window      &trans              &trans  &trans  &trans  &trans  &trans  &none   &kp F12 &none  &trans &trans &trans
-                 &trans         &macro_split_right      &kp LC(LS(COMMA))       &kp LC(LA(BACKSLASH))   &macro_recent_location  &macro_tooltip_func     &trans              &trans  &trans  &trans  &trans  &trans  &trans  &trans  &none  &none  &none  &trans  &trans  &trans
-                 &trans         &trans                  &trans                  &none                   &macro_file_structure   &trans                  &trans              &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans &trans
+                 &trans         &trans                      &trans                  &trans                  &trans                  &trans                  &trans              &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                 &trans         &kp LA(F8)                  &kp LA(LS(F12))         &kp LC(LS(P))           &kp LC(LA(NUMBER_2))    &kp LC(LA(NUMBER_2))    &trans              &trans  &none   &none   &none  &trans   &trans  &trans
+                 &trans         &kp LC(LS(E))               &kp LC(LS(B))           &macro_prev_splitter    &macro_next_splitter    &kp LS(LG(D))      &trans              &trans  &trans  &trans  &trans  &trans  &none   &kp F12 &none  &trans &trans &trans
+                 &trans         &kp LC(LA(SINGLE_QUOTE))    &kp LC(LS(COMMA))       &kp LC(LA(BACKSLASH))   &kp LA(NUMBER_4)        &macro_tooltip_func     &trans              &trans  &trans  &trans  &trans  &trans  &trans  &trans  &none  &none  &none  &trans  &trans  &trans
+                 &trans         &trans                      &trans                  &none                   &kp LS(LA(O))           &trans                  &trans              &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans &trans
             >;
         };
 
