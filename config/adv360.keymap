@@ -8,20 +8,11 @@
   behaviors {
     #include "macros.dtsi"
 
-    hm: homerow_mods {
-        compatible = "zmk,behavior-hold-tap";
-        label = "HOMEROW_MODS";
-        #binding-cells = <2>;
-        tapping-term-ms = <210>;
-        quick-tap-ms = <0>;
-        flavor = "tap-preferred";
-        bindings = <&kp>, <&kp>;
-    };
     bhm: balanced_homerow_mods {
         compatible = "zmk,behavior-hold-tap";
         label = "HOMEROW_MODS";
         #binding-cells = <2>;
-        tapping-term-ms = <200>;
+        tapping-term-ms = <190>;
         quick-tap-ms = <125>;
         global-quick-tap;
         flavor = "tap-preferred";
@@ -36,7 +27,7 @@
             bindings = <
                 &kp EQUAL   &kp N1      &kp N2       &kp N3         &kp N4                  &kp N5     &tog 0          &tog 0      &kp N6     &kp N7       &kp N8      &kp N9      &kp N0      &kp MINUS
                 &kp TAB     &kp Q       &kp W        &kp F          &kp P                   &kp B      &mo 3           &mo 3       &kp J      &kp L        &kp U       &kp Y       &kp SEMI    &kp BSLH
-                &kp ESC     &bhm LALT A &bhm LGUI R  &bhm LCTRL S   &bhm LSHIFT T           &kp G      &none           &kp LCTRL   &kp LALT   &kp LGUI     &kp RCTRL   &none       &kp M       &bhm LSHIFT N   &bhm LCTRL E    &bhm LGUI I              &bhm LALT O  &kp SQT
+                &kp ESC     &bhm LALT A &bhm LGUI R  &bhm LCTRL S   &bhm LSHIFT T           &kp G      &none           &none   &kp LALT   &kp LGUI     &none   &none       &kp M       &bhm LSHIFT N   &bhm LCTRL E    &bhm LGUI I              &bhm LALT O  &kp SQT
                 &kp LSHFT   &kp Z       &kp X        &kp C          &bhm LS(LC(LALT)) D     &kp V      &none           &none       &kp HOME   &none        &none       &kp PG_UP   &none       &none           &kp K           &bhm LS(LC(LALT)) H      &bhm LG(RCTRL) COMMA    &kp DOT  &kp FSLH   &trans
                 &mo 1       &kp GRAVE   &kp CAPS     &kp LEFT       &kp RIGHT               &kp BSPC   &kp DEL         &kp END     &kp PG_DN  &kp ENTER    &kp SPACE   &kp UP      &kp DOWN    &trans          &trans          &mo 2
             >;
@@ -66,7 +57,7 @@
             bindings = <
                  &trans        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &to 0                  &to 0       &trans  &trans  &trans  &trans  &trans  &trans
                  &trans        &trans        &trans        &trans        &trans        &trans        &trans                 &trans      &trans  &trans  &trans  &trans  &trans  &trans
-                 &trans        &trans        &trans        &trans        &trans        &trans        &bootloader            &bootloader &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                 &trans        &trans        &trans        &trans        &trans        &trans        &bootloader   &trans    &trans  &trans  &trans  &bootloader  &trans  &trans  &trans  &trans  &trans  &trans
                  &trans        &trans        &trans        &trans        &trans        &trans        &trans                 &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
                  &trans        &trans        &trans        &bl BL_INC    &bl BL_DEC    &bt BT_CLR    &trans                 &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
