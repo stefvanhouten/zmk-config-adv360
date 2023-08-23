@@ -1,9 +1,3 @@
-macro_tooltip_func: macro_tooltip_func{
-compatible = "zmk,behavior-macro";
-label = "macro_tooltip_func";
-#binding-cells = <0>;
-bindings = <&kp LC(K)>, <&kp LC(I)>;
-};
 macro_arrow: macro_arrow{
 compatible = "zmk,behavior-macro";
 label = "macro_arrow";
