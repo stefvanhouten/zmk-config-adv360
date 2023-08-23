@@ -40,7 +40,7 @@
  &kp EQUAL     &kp N1      &kp N2    &kp N3     &kp N4  &kp N5              &tog 0                                                               &none  &kp N6  &kp N7     &kp N8    &kp N9         &kp N0  &kp MINUS
    &kp TAB      &kp Q       &kp W     &kp F      &kp P   &kp B               &mo 3                                                               &mo 3   &kp J   &kp L      &kp U     &kp Y  &kp SEMICOLON   &kp BSLH
    &kp ESC      &bhm LALT A &bhm LGUI R &bhm LCTRL S      &bhm LSHIFT T   &kp G               &none    &mo 2  &kp LALT                   &kp LGUI  &kp RCTRL      &none   &kp M  &bhm LSHIFT N        &bhm LCTRL E            &bhm LGUI I     &bhm LALT O    &kp SQT
- &kp LSHFT      &kp Z       &kp X     &kp C      &bhm LS(LC(LALT)) D   &kp V                               &kp HOME                  &kp PG_UP                         &kp K    &bhm LS(LC(LALT)) H  &bhm LG(RCTRL) COMMA   &kp DOT       &kp FSLH  &kp RSHFT
+  &kp LSHFT      &kp Z       &kp X     &kp C      &bhm LS(LC(LALT)) D   &kp V                               &kp HOME                  &kp PG_UP                         &kp K    &bhm LS(LC(LALT)) H  &bhm LG(RCTRL) COMMA   &kp DOT       &kp FSLH  &kp RSHFT
      &mo 1  &kp GRAVE  &caps_word  &kp LEFT  &kp RIGHT                    &kp BSPC  &kp DEL   &kp END                  &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP   &kp DOWN  &kp LBKT       &kp RBKT      &mo 2
             >;
         };
