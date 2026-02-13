@@ -13,26 +13,23 @@
             label = "HOMEROW_MODS";
             #binding-cells = <2>;
             tapping-term-ms = <190>;
-            quick_tap_ms = <100>;
+            quick-tap-ms = <100>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
-
             require-prior-idle-ms = <180>;
-            quick-tap-ms = <100>;
         };
 
-        hmo: homerow_mods_mo {
+        lthm: layer_tap_hm_timing {
             compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS";
+            label = "LAYER_TAP_HM_TIMING";
             #binding-cells = <2>;
             tapping-term-ms = <190>;
-            quick_tap_ms = <100>;
+            quick-tap-ms = <100>;
             flavor = "tap-preferred";
             bindings = <&mo>, <&kp>;
-
             require-prior-idle-ms = <180>;
-            quick-tap-ms = <100>;
         };
+
     };
 
     keymap {
@@ -43,7 +40,7 @@
 &kp EQUAL  &kp N1      &kp N2      &kp N3              &kp N4            &kp N5  &tog 1                                                 &mo 3      &kp N6  &kp N7            &kp N8               &kp N9      &kp N0         &kp MINUS
 &kp TAB    &kp Q       &kp W       &kp F               &kp P             &kp B   &none                                                  &none      &kp J   &kp L             &kp U                &kp Y       &kp SEMICOLON  &kp BSLH
 &kp ESC    &hm LALT A  &hm LGUI R  &hm LEFT_CONTROL S  &hm LEFT_SHIFT T  &kp G   &mo 3     &mo 1    &kp LALT      &kp LGUI   &kp RCTRL  &mo 3      &kp M   &hm LEFT_SHIFT N  &hm LCTRL E          &hm LGUI I  &hm LALT O     &kp SQT
-&kp LSHFT  &kp Z       &kp X       &hmo 1 C            &hmo 2 D          &kp V                      &kp HOME      &kp PG_UP                        &kp K   &hm LG(RCTRL) H   &hm LG(RCTRL) COMMA  &kp DOT     &kp FSLH       &kp RSHFT
+&kp LSHFT  &kp Z       &kp X       &lthm 1 C           &lthm 2 D         &kp V                      &kp HOME      &kp PG_UP                        &kp K   &hm LG(RCTRL) H   &hm LG(RCTRL) COMMA  &kp DOT     &kp FSLH       &kp RSHFT
 &mo 2      &kp GRAVE   &kp CAPS    &kp LEFT            &kp RIGHT                 &kp BSPC  &kp DEL  &kp END       &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP            &kp DOWN             &kp LBKT    &kp RBKT       &mo 2
             >;
         };
