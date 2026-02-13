@@ -38,11 +38,11 @@
 
         default_layer {
             bindings = <
-&kp EQUAL  &kp N1      &kp N2      &kp N3              &kp N4            &kp N5  &tog 1                                                   &mo 3      &kp N6  &kp N7            &kp N8               &kp N9      &kp N0         &kp MINUS
-&kp TAB    &kp Q       &kp W       &kp F               &kp P             &kp B   &none                                                    &none      &kp J   &kp L             &kp U                &kp Y       &kp SEMICOLON  &kp BSLH
-&kp ESC    &hm LALT A  &hm LGUI R  &hm LEFT_CONTROL S  &hm LEFT_SHIFT T  &kp G   &mo 3     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &mo 3      &kp M   &hm LEFT_SHIFT N  &hm LCTRL E          &hm LGUI I  &hm LALT O     &kp SQT
-&kp LSHFT  &kp Z       &kp X       &kp C               &hmo 2 D          &kp V                        &kp HOME      &kp PG_UP                        &kp K   &hm LG(RCTRL) H   &hm LG(RCTRL) COMMA  &kp DOT     &kp FSLH       &kp RSHFT
-&mo 2      &kp GRAVE   &kp CAPS    &kp LEFT            &kp RIGHT                 &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP            &kp DOWN             &kp LBKT    &kp RBKT       &mo 2
+&kp EQUAL  &kp N1      &kp N2      &kp N3              &kp N4            &kp N5  &tog 1                                                 &mo 3      &kp N6  &kp N7            &kp N8               &kp N9      &kp N0         &kp MINUS
+&kp TAB    &kp Q       &kp W       &kp F               &kp P             &kp B   &none                                                  &none      &kp J   &kp L             &kp U                &kp Y       &kp SEMICOLON  &kp BSLH
+&kp ESC    &hm LALT A  &hm LGUI R  &hm LEFT_CONTROL S  &hm LEFT_SHIFT T  &kp G   &mo 3     &mo 2    &kp LALT      &kp LGUI   &kp RCTRL  &mo 3      &kp M   &hm LEFT_SHIFT N  &hm LCTRL E          &hm LGUI I  &hm LALT O     &kp SQT
+&kp LSHFT  &kp Z       &kp X       &kp C               &hmo 2 D          &kp V                      &kp HOME      &kp PG_UP                        &kp K   &hm LG(RCTRL) H   &hm LG(RCTRL) COMMA  &kp DOT     &kp FSLH       &kp RSHFT
+&mo 2      &kp GRAVE   &kp CAPS    &kp LEFT            &kp RIGHT                 &kp BSPC  &kp DEL  &kp END       &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP            &kp DOWN             &kp LBKT    &kp RBKT       &mo 2
             >;
         };
 
