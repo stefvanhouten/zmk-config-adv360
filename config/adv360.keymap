@@ -18,6 +18,7 @@
             bindings = <&kp>, <&kp>;
 
             require-prior-idle-ms = <180>;
+            quick-tap-ms = <100>;
         };
 
         hmo: homerow_mods_mo {
@@ -30,6 +31,7 @@
             bindings = <&mo>, <&kp>;
 
             require-prior-idle-ms = <180>;
+            quick-tap-ms = <100>;
         };
     };
 
