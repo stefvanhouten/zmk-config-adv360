@@ -22,7 +22,7 @@
             require-prior-idle-ms = <180>;
         };
 
-        hmo: homerow_mods {
+        hmo: homerow_mods_mo {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
             #binding-cells = <2>;
